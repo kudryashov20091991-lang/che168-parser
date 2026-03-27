@@ -1,0 +1,6 @@
+@echo off
+echo Отложенный запуск парсера через 10 секунд...
+timeout /t 10 /nobreak
+echo Запуск парсера...
+C:\Users\MSI\AppData\Local\Programs\Python\Python311\python.exe C:\Users\MSI\Desktop\Клауд\Курсор\Автосайты\Парсеры\che168_proxy_strict.py
+pause

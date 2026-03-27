@@ -1,0 +1,137 @@
+[
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13853",
+    "timestamp": "2026-03-25T15:59:01.947682",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13852",
+    "timestamp": "2026-03-25T15:59:42.629641",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13851",
+    "timestamp": "2026-03-25T16:00:23.317069",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13853",
+    "timestamp": "2026-03-25T16:01:03.959416",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13852",
+    "timestamp": "2026-03-25T16:01:44.892790",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13851",
+    "timestamp": "2026-03-25T16:02:25.556496",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13853",
+    "timestamp": "2026-03-25T16:03:06.156553",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13852",
+    "timestamp": "2026-03-25T16:03:46.803491",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13851",
+    "timestamp": "2026-03-25T16:04:27.510889",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13853",
+    "timestamp": "2026-03-25T16:05:08.173646",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13852",
+    "timestamp": "2026-03-25T16:05:48.823855",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13851",
+    "timestamp": "2026-03-25T16:06:29.499805",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13853",
+    "timestamp": "2026-03-25T16:07:10.107559",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13852",
+    "timestamp": "2026-03-25T16:07:50.744381",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  },
+  {
+    "url": "https://www.che168.com/beijing/",
+    "proxy": "45.32.56.105:13851",
+    "timestamp": "2026-03-25T16:08:31.457888",
+    "success": false,
+    "data": null,
+    "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.che168.com/beijing/\", waiting until \"networkidle\"\n",
+    "ip": null
+  }
+]

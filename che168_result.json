@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-03-27T18:38:41",
+  "source": "che168.com",
+  "proxies_tested": 3,
+  "cars_found": 0,
+  "results": [
+    {
+      "proxy": "45.32.56.105:13851",
+      "status": "error",
+      "error": "Page.goto: net::ERR_TIMED_OUT at https://www.che168.com/beijing/\nCall log:\n  - navigating to \"https:"
+    },
+    {
+      "proxy": "45.32.56.105:13852",
+      "status": "error",
+      "error": "Page.goto: net::ERR_TIMED_OUT at https://www.che168.com/beijing/\nCall log:\n  - navigating to \"https:"
+    },
+    {
+      "proxy": "45.32.56.105:13853",
+      "status": "error",
+      "error": "Page.goto: net::ERR_TIMED_OUT at https://www.che168.com/beijing/\nCall log:\n  - navigating to \"https:"
+    }
+  ],
+  "cars": []
+}

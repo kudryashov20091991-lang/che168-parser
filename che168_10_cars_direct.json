@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-03-27T15:23:04.347841",
+  "source": "che168.com",
+  "total": 3,
+  "proxy": "direct (no proxy)",
+  "cars": [
+    {
+      "title_ru": "今日推荐 准新车 练手车 Mercedes-BenzS级 2026款 S 400 L 商务特别版 0.01 тыс. км／2026-3／Пекин 76.32万 77.05万 新上架准新车0次过户原厂质保 Mercedes-BenzS级 2024款 改款 S 400 L 商务型 2.90 тыс. км／2",
+      "price_cny": 100.0,
+      "price_rub": 1300.0,
+      "mileage_km": 100.0,
+      "year": 2026,
+      "image": "https://x.autoimg.cn/2scimg/pc/web/20190425/brand-left.png",
+      "url": "https://www.che168.com/beijing/a0_0ms50dgscncgpi1ltocspexx0/"
+    },
+    {
+      "title_ru": "品牌认证 厂商认证车源 车况有保障 购买更放心 Audi品荐广告 Audi品荐: 车龄5 г.内，行驶里程未超过15 тыс. км，有完整的保养维修记录，通过Audi110项严格质量检测. 更多认证车源 AudiA6进口 2024款 allroad quattro ",
+      "price_cny": 150000.0,
+      "price_rub": 1950000.0,
+      "mileage_km": 150000.0,
+      "year": 2024,
+      "image": "https://img2.autoimg.cn/admdfs/g24/M08/30/D8/wKgHIVreqTaADZ-TAAUD8Yc4NfY804.png",
+      "url": "https://www.che168.com/beijing/a0_0ms3dgscncgpi1ltocspexx0/#pvareaid=105581"
+    },
+    {
+      "title_ru": "Audi品荐广告 Audi品荐: 车龄5 г.内，行驶里程未超过15 тыс. км，有完整的保养维修记录，通过Audi110项严格质量检测. 更多认证车源",
+      "price_cny": 150000.0,
+      "price_rub": 1950000.0,
+      "mileage_km": 150000.0,
+      "year": 0,
+      "image": "",
+      "url": "https://www.che168.com/beijing/a_ms3dgscncgpiltoc1spex/#pvareaid=100574"
+    }
+  ]
+}
