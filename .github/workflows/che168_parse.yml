@@ -18,5 +18,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: che168-result
-        path: che168_result.json
-        retention-days: 30
+        path: |
+          che168_result.json
+          debug_page.html
+        retention-days: 7

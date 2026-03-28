@@ -30,12 +30,30 @@ def parse():
             resp = requests.get("https://www.che168.com/beijing/", headers=HEADERS, timeout=60)
             if resp.status_code == 200:
                 result["status"] = "success"
-                # Ищем цены в формате JSON или тексте
-                prices = re.findall(r'"price":"?(\d+\.?\d*)"?', resp.text)
-                prices += re.findall(r'(\d+\.?\d*)\s*万', resp.text)
-                for p in prices[:10]:
+                # Сохраняем HTML для отладки
+                output["debug_html"] = resp.text[:50000]
+                with open("debug_page.html", "w", encoding="utf-8") as f:
+                    f.write(resp.text[:50000])
+                # Ищем цены в различных форматах
+                patterns = [
+                    r'"price"\s*:\s*"?(\d+\.?\d*)"?',
+                    r'"price"\s*:\s*(\d+\.?\d*)',
+                    r'(\d+\.?\d*)\s*万',
+                    r'￥\s*(\d+\.?\d*)',
+                    r'price.*?(\d{1,2}\.\d+)',
+                ]
+                all_prices = []
+                for pattern in patterns:
+                    all_prices.extend(re.findall(pattern, resp.text))
+                for p in all_prices[:10]:
                     try:
-                        price_cny = float(p) * 10000
+                        val = float(p)
+                        if 0.1 < val < 100:  # Цена в 万
+                            price_cny = val * 10000
+                        elif val < 1000:  # Слишком мало
+                            continue
+                        else:
+                            price_cny = val
                         cars.append({"price_cny": price_cny, "price_rub": round(price_cny * 13, 2)})
                     except: pass
         except Exception as e:
@@ -84,3 +102,10 @@ if __name__ == "__main__":
     }
     with open("che168_result.json", "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
+
+    # Сохраняем debug HTML как артефакт
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        try:
+            with open("debug_page.html", "w", encoding="utf-8") as f:
+                f.write(output.get("debug_html", "")[:50000])
+        except: pass
