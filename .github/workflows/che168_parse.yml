@@ -1,37 +1,22 @@
 name: Che168 Parser
 
 on:
-  workflow_dispatch:  # Запуск вручную
+  workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'  # Каждые 6 часов (опционально)
+    - cron: '0 */6 * * *'
 
 jobs:
   parse:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-
-    - name: Setup Python
-      uses: actions/setup-python@v5
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
       with:
         python-version: '3.12'
-
-    - name: Install dependencies
-      run: pip install requests
-
-    - name: Run parser
-      id: parser
-      run: python che168_github_action.py
-      working-directory: ./Курсор/Автосайты/Парсеры
-
-    - name: Upload result
-      uses: actions/upload-artifact@v4
+    - run: pip install requests
+    - run: python che168_parser.py
+    - uses: actions/upload-artifact@v4
       with:
         name: che168-result
-        path: Курсор/Автосайты/Парсеры/che168_result.json
+        path: che168_result.json
         retention-days: 30
-
-    - name: Show result
-      run: cat Курсор/Автосайты/Парсеры/che168_result.json
