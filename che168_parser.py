@@ -7,9 +7,7 @@ import json, os, time
 from datetime import datetime
 
 PROXIES = [
-    {"server": "http://45.32.56.105:13851", "username": "Ek0G8F", "password": "GR0Fhj"},
-    {"server": "http://45.32.56.105:13852", "username": "Ek0G8F", "password": "GR0Fhj"},
-    {"server": "http://45.32.56.105:13853", "username": "Ek0G8F", "password": "GR0Fhj"},
+    {"server": "http://170.83.237.197:8000", "username": "12QaFM", "password": "Dv60es"},
 ]
 
 def parse_with_playwright():
