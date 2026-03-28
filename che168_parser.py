@@ -22,6 +22,7 @@ HEADERS = {
 def parse():
     cars = []
     results = []
+    debug_html = ""
 
     # На GitHub Actions пробуем без прокси сначала
     if os.environ.get("GITHUB_ACTIONS") == "true":
@@ -30,10 +31,9 @@ def parse():
             resp = requests.get("https://www.che168.com/beijing/", headers=HEADERS, timeout=60)
             if resp.status_code == 200:
                 result["status"] = "success"
-                # Сохраняем HTML для отладки
-                output["debug_html"] = resp.text[:50000]
+                debug_html = resp.text[:50000]
                 with open("debug_page.html", "w", encoding="utf-8") as f:
-                    f.write(resp.text[:50000])
+                    f.write(debug_html)
                 # Ищем цены в различных форматах
                 patterns = [
                     r'"price"\s*:\s*"?(\d+\.?\d*)"?',
@@ -84,13 +84,13 @@ def parse():
             results.append(result)
             time.sleep(2)
 
-    return cars, results
+    return cars, results, debug_html
 
 if __name__ == "__main__":
     import urllib3
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-    cars, results = parse()
+    cars, results, debug_html = parse()
     print(f"Found: {len(cars)} cars")
     output = {
         "timestamp": datetime.now().isoformat(),
@@ -104,8 +104,6 @@ if __name__ == "__main__":
         json.dump(output, f, indent=2, ensure_ascii=False)
 
     # Сохраняем debug HTML как артефакт
-    if os.environ.get("GITHUB_ACTIONS") == "true":
-        try:
-            with open("debug_page.html", "w", encoding="utf-8") as f:
-                f.write(output.get("debug_html", "")[:50000])
-        except: pass
+    if os.environ.get("GITHUB_ACTIONS") == "true" and debug_html:
+        with open("debug_page.html", "w", encoding="utf-8") as f:
+            f.write(debug_html)
